@@ -1,0 +1,48 @@
+@media(min-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .link {
+        width: 40%;
+    }
+}
+
+@media(min-width: 1024px) {
+    #main {
+        background-color: var(--form-background);
+        padding: 3rem 5rem;
+    }
+}
+
+@media(min-width: 1366px) {
+    body {
+        position: relative;
+    }
+
+    #main {
+        z-index: 1;
+        margin-right: 15rem;
+        
+    }
+
+    .bg-img {
+        display: block;
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        height: 100vh;
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+}

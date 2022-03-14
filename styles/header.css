@@ -1,0 +1,28 @@
+#main .header .logo {
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+#main .header h1 {
+    color: var(--text-title);
+
+    font: 600 1.5rem 'Poppins', sans-serif;
+
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+#main .header h1 span {
+    color: var(--primary-color);
+}
+
+#main .header h1 img {
+    width: 1.5rem;
+}
+
+#main .header p {
+    color: var(--text-base);
+    font: 500 .875rem 'Roboto', sans-serif;
+}

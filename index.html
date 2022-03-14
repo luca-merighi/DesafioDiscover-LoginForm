@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Luca Merighi">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/responsiviness.css">
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <title>Login Form</title>
+</head>
+<body>
+    <main id="main">
+        <header class="header">
+            <img 
+            src="./img/logo.svg" 
+            class="logo" 
+            alt="Logo camp.in">
+
+            <h1>
+                <img src="./img/log-in.svg" alt="Login Icon">
+                Faça seu <span>login</span>
+            </h1>
+            <p>Entre com suas informações de cadastro</p>
+        </header>
+        <form class="form">
+            <fieldset>
+                <div class="email-input">
+                    <label for="email">
+                        E-mail
+                    </label>
+                    <div class="input-field">
+                        <input 
+                        pattern=".+@.+\.com"
+                        autocomplete="off"
+                        required
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Digite seu e-mail">
+                        <img 
+                        src="./img/mail.svg" 
+                        class="email-img" 
+                        alt="Email Icon">
+                    </div>
+                </div>
+
+                <div class="password-input">
+                    <label for="password">
+                        Senha
+                    </label>
+                    <div class="input-field">
+                        <input 
+                        required
+                        type="password" 
+                        name="password" 
+                        id="password"
+                        placeholder="Digite sua senha">
+                        <img 
+                        src="./img/lock.svg" 
+                        class="password-img"
+                        alt="Password Icon">
+                        <img 
+                        class="password-unlock"
+                        src="./img/eye.svg" 
+                        alt="Password Unlock Icon">
+                    </div>
+                </div>
+                
+                <div class="account">
+                    <div class="stay-logged">
+                        <label for="checkbox" class="container">
+                            Lembre-me
+                            <input 
+                                class="checkmark"
+                                type="checkbox" 
+                                name="checkbox" 
+                                id="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+    
+                    <a href="#" class="link">
+                        Esqueci minha senha
+                    </a>
+                </div>
+
+                <button class="button">
+                    ENTRAR
+                </button>
+
+                <a href="#" class="register">
+                    Não tem uma conta?
+                    <span>Registre-se</span>
+                </a>
+            </fieldset>
+        </form>
+    </main>
+    <img 
+    class="bg-img"
+    src="./img/side-image.jpg" alt="Background Image">
+
+    <img src="./img/mail-focus.svg" alt="">
+
+    <script src="./main.js"></script>
+</body>
+</html>
